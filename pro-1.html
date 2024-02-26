@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="pro-1.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+        <header class="header">
+                <nav>
+                        <a href="index.html"><img src="C:\Users\JESUS\Desktop\project\gallery\logo1.png"  ></a>
+                        <h1 style="color:lightyellow" >ALPHA MAP TECH</h1>
+                        <div class="nav-links">
+                            <ul>
+                                <li><a href="">HOME</a></li>
+                                <li><a href="">ABOUT</a></li>
+                                <li><a href="">COURSES</a></li>
+                                <li><a href="">CONTACT</a></li>
+                                <li><a href="pro-1.html">LOGIN</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+    
+    
+       
+    <div class="container">
+        <div class="form-box">
+
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+            </div>
+            <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linked-in"></i>
+                    
+
+            </div>
+            <form id="Login-form" class="input-group">
+                <input type="text" class="input-field" placeholder="User Name" id="required">
+                <input type="text" class="input-field" placeholder="Enter Password" id="required">
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+
+            <form id="Register-form" class="input-group">
+                <input type="text" class="input-field" placeholder="User Name" id="required">
+                <input type="text" class="input-field" placeholder="Enter Password" id="required">
+                <input type="email" class="input-field" placeholder="Email Id" id="required">
+                <input type="checkbox" class="check-box"><span>I agree the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+
+    </div>
+</header>
+    <script>
+        var x = document.getElementById("Login-form");
+        var y = document.getElementById("Register-form");
+        var z = document.getElementById("btn");
+
+        function Register() {
+            x.style.left = "-400px";
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function Login() {
+            x.style.left = "50px";
+            y.style.left = "450px"
+            z.style.left = "0"
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

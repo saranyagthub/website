@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+    <link rel="stylesheet" href="style.css">
+    <title>ALPHA MAP TECH</title>
+</head>
+<body>
+    <header class="sub-header">
+            <nav>
+                    <a href="index.html"><img src="gallery/logo1.png"></a>
+                    <h1 class="name" >ALPHA MAP TECH</h1>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()" ></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="course.html">COURSES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="login.html">LOGIN</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+<h1>Our Courses</h1>
+
+</header>
+<!--COURSE-->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>Courses are designed for Continuing  Career development and are offeredby a number of Leading technical domain experts around the world.Most of the Popular courses are here!</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Frontend</h3>
+            <p>Get a deeper understanding of Client Side Programming or in other words the front end development by developing highly responsive web pages across languages.
+            </p>
+        </div>
+
+        <div class="course-col">
+            <h3>Backend</h3>
+            <p>Learn the industry leading ways to design back end development with least response time, which in turn helps in the fast loading of web applications. You’ll learn to connect databases with servers.
+            </p>
+        </div>
+
+        <div class="course-col">
+            <h3>Digital Marketing</h3>
+            <p> Digital Marking Course is designed to provide skills for jobs in the Digital Marketing sector.
+            </p>
+        </div>
+
+        <div class="course-col">
+            <h3>Cyber Security</h3>
+            <p>Gain skills to help you counter cyber threats and grow as a cyber security specialist. With cyber security training, you can develop expertise that is expected to be in demand well into the future.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+   
+
+
+    <!-- javascript for toggle menu -->
+    <script> 
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+
+    }
+
+    </script>
+    
+</body>
+</html>

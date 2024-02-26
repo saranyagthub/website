@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(cm.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.nav{
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav img{
+    width: 1px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 4px 12px;
+    position:relative;
+    margin: 0;
+}
+.nav-links ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+/*---Courses---*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.course-col{
+    flex-basis: 23%;
+    background: #d4cacb;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    margin: 10px;
+    font-weight: 600;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+
+    }
+}
+.about{
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+.about-call{
+    flex-basis: 50%;
+    padding: 30px 2px;
+   
+
+   
+}
+.about-call img{
+    width: 70%;
+    
+    
+    
+}
+.about-cal h1{
+    padding-top: 0;
+}
+.about-cal p{
+    padding: 20px;
+}
